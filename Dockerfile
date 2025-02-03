@@ -1,8 +1,7 @@
 # syntax=docker/dockerfile:1
 
-FROM marpteam/marp-cli:latest
+FROM marpteam/marp-cli:v4.1.1
 
-RUN apk update && apk add --no-cache git
 RUN npm install -g --save-prod markdown-it-container markdown-it-mark markdown-it-variable
 
 COPY assets /home/marp/core
