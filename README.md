@@ -1,13 +1,13 @@
-# Marp Engine
+# marp usbs
 
-Custom marp engine
+marp image with custom marp engine and The University of Sydney Business School slide theme
 
-Additional features:
+## Additional features
 
-- Custom containers via markdown-it-container
-- Highlighting via markdown-it-mark
-- Variables via markdown-it-variable
+- div containers via markdown-it-container
+- highlighting via markdown-it-mark
+- placeholders via markdown-it-variable
 
-## Build Image
+## Usage
 
-`docker buildx build --platform linux/amd64,linux/arm64 -t julianprester/marp-usbs:latest --push .`
+`docker pull ghcr.io/re3-work/marp-usbs:main`
