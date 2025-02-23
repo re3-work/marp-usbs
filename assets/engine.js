@@ -1,11 +1,10 @@
 const markdownItMark = require('markdown-it-mark')
 const markdownItContainer = require('markdown-it-container')
+const markdownItAdmon = require('markdown-it-admon')
 
 module.exports = ({ marp}) => marp
   .use(markdownItMark)
-  .use(markdownItContainer, "tip")
-  .use(markdownItContainer, "warning")
-  .use(markdownItContainer, "danger")
+  .use(markdownItAdmon)
   .use(markdownItContainer, "sources")
   .use(markdownItContainer, "columns", {
     render: function (tokens, idx) {

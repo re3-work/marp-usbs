@@ -2,7 +2,7 @@
 
 FROM marpteam/marp-cli:v4.1.1
 
-RUN npm install -g --save-prod markdown-it-container markdown-it-mark markdown-it-variable
+RUN npm install -g --save-prod markdown-it-container markdown-it-mark markdown-it-variable markdown-it-admon
 
 COPY assets /home/marp/core
 
