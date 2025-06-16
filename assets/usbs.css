@@ -258,3 +258,23 @@ img[alt~="center"] {
     content: "\f06d";
     color: #e03131;
 }
+
+.admonition.cite {
+    border-left: none;
+}
+
+.admonition.cite>p::before {
+    content: "\f04b";
+    color: #666;
+}
+
+.admonition.cite p {
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    font-size: 0.6em;
+    text-align: center;
+    color: #666;
+}
+
+.admonition.cite p a {
+    color: #666;
+}
